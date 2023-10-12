@@ -7,7 +7,13 @@ import Img4 from '../assets/Img4.jpeg'
 import Img3 from '../assets/portada3.jpeg'
 import nails1 from '../assets/nails1.jpeg'
 import nails2 from '../assets/nails2.jpeg'
+import insta from '../assets/instagram.png'
+import face from '../assets/facebook.png'
+import whats from '../assets/whatsapp.png'
+import namefeed from '../assets/foto1.png'
+import instafeed from '../assets/simulacionInsta.jpeg'
 import styles from './Home.module.css'
+// import InstagramEmbed from 'react-instagram-embed';
 
 
 const Home = () => {
@@ -60,6 +66,40 @@ const Home = () => {
           <img src={Img4} className={styles.Img} />
         </div>
       </div>
+      <div className={styles.FirstDiv}>
+        <div className={styles.MiddleDiv}>
+          <p className={styles.Title}>SIGUENOS EN NUESTRAS</p>
+          <p className={styles.Titlex}>REDES SOCIALES</p>
+          <div className={styles.Icons}>
+            <img src={insta} width={60}></img>
+            <img src={face} width={60}></img>
+          </div>
+        </div>
+        <div className={styles.instaSimula}>
+          <div className={styles.InstaTitles}>
+            <img src={arbol} width={50} height={50} />
+            <p>truestudio.es</p>
+          </div>
+          <img src={instafeed} className={styles.Insta} />
+        </div>
+      </div>
+
+
+
+
+      {/* <InstagramEmbed
+        url='https://www.instagram.com/truestudio.es/'
+        clientAccessToken='123|456'
+        maxWidth={320}
+        hideCaption={false}
+        containerTagName='div'
+        protocol=''
+        injectScript
+        onLoading={() => {}}
+        onSuccess={() => {}}
+        onAfterRender={() => {}}
+        onFailure={() => {}}
+      /> */}
     </>
   )
 }
